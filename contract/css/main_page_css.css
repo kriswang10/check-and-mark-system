@@ -1,0 +1,537 @@
+body{
+    height: 2200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*顶部栏部分*/
+.topbar{
+    margin: 0 auto;
+    height: 90px;
+    width: 1533px;
+    min-width: 850px;
+    position: relative;
+}
+.topbar img{
+    position: absolute;
+    height: 43px;
+    width: 150px;
+    top: 24px;
+    left: 2%;
+}
+.container{
+    margin: 0 auto;
+    position: absolute;
+    left: 14%;
+
+    width: 1310px;
+    height: 80px;
+}
+.container .topbar-search{
+    position: relative;
+    margin-top: 33px;
+    /*border: 1px solid red;*/
+    /*margin-top: 20px;*/
+    height: 28px;
+    width: 450px;
+}
+.container .topbar-nav{
+    position: absolute;
+    left: 56%;
+    margin-top: -26px;
+    margin-left: -70px;
+    /*border: 1px solid blue;*/
+    height: 28px;
+}
+/*搜索框设计*/
+.container .topbar-search .search-form{
+    display: block;
+    position: relative;
+}
+/*去除搜索框的x号*/
+.container .topbar-search input::-webkit-search-cancel-button{
+    display: none;
+}
+.container .topbar-search .search-text{
+    width: 360px;
+    height: 28px;
+    margin-left: 39px;
+    /*border:2px solid #c5464a;*/
+    border-radius:5px;
+    background-color: #F3F3F3;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    z-index: 1;
+    padding-left: 40px;
+}
+.container .topbar-search .search-form img{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 2px;
+    margin-left: 40px;
+    z-index: 0;
+}
+
+/*上边右侧文字区域*/
+
+.topbar-nav a{
+    font-size: 16px;
+    float: left;
+    text-decoration: none;
+    margin-right: 65px;
+    color: #494949;
+}
+/*调整login区域的字体*/
+.topbar-nav .login a{
+    font-size: 16px;
+    /*padding-top: 10px;*/
+    margin-right: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+.login{
+    line-height: 100%;
+    margin-top: -3px;
+    position: absolute;
+    float: left;
+    padding: 0;
+    top: -3px;
+    height: 100%;
+    font-size: 16px;
+    left: 490px;
+    text-align: center;
+    width: 160px;
+    /*border: 1px solid red;*/
+}
+
+/*调整字的下划线颜色，单独设置一个class便于js随着页面的切换调整它到其他的a标签*/
+.blue-line{
+    display: block;
+    text-decoration: underline;
+    border-bottom: 5px solid #2798F8;
+}
+/*这里因为登录和注册都需要切换显示蓝色背景，因此单独设置一个class方便js控制*/
+/*切换显示方法：*/
+.login-color-white a{
+    color: white;
+}
+.blue-block{
+    color: white;
+    border:2px solid #2798F8;
+    padding:4px 6px ;
+    background:#2798F8;
+    width:40px;
+    border-radius:10px;
+}
+.login-color-black a{
+    padding-top: 5px ;
+    /*padding-left: -px;*/
+    width:40px;
+}
+
+
+/*第二部分背景图片*/
+.pagewrap{
+    position: relative;
+    background: url("../images/main_page/main_page_back1.jpg") no-repeat;
+    width: 1533px;
+    margin: 0 auto;
+    margin-top: -120px;
+    /*min-height: 850px;*/
+    z-index: 0;
+}
+
+.pagewrap-funcs{
+    position: relative;
+    /*border: 1px solid red;*/
+    height: 380px;
+    width: 420px;
+    margin-top: 110px;
+    margin-left: 925px;
+    /*border: 2px solid red;*/
+}
+.name-top{
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+    top: 110px;
+    line-height: 1;
+}
+.name-top p{
+    margin-left: 8px;
+    font-size: 20px;
+    float: left;
+}
+
+.name-btm{
+    /*border: 1px solid red;*/
+    position: relative;
+    line-height: 1;
+    /*height: 40px;*/
+    margin-top: 330px;
+    top: 89px;
+    margin-left: 10px;
+    margin-right: -90px;
+    text-align: center;
+    z-index: 1;
+}
+.name-btm a{
+    text-decoration: none;
+    color: white;
+    margin-right: 65px;
+}
+
+/*图片部分*/
+.funcs-bg{
+    /*border: 1px solid red;*/
+    position: absolute;
+    height: 380px;
+    width: 420px;
+    margin-top: -268px;
+    z-index: 0;
+}
+.dec-line{
+    position: relative;
+    top: -15px;
+    /*border: 1px solid red;*/
+    /*margin-left: 120px;*/
+    margin-right: 180px;
+    margin-top: 50px;
+
+    /*left: 20px;*/
+}
+.dec-line img{
+    margin-left: 15px;
+}
+
+.three-images{
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin-top: 260px;
+    margin-right: -15px;
+}
+.three-images img{
+    margin-right: 90px;
+    height: 35px;
+    width: 40px;
+}
+/*文字背景颜色*/
+.back-color{
+    position: relative;
+    /*border: 1px solid red;*/
+    height: 50px;
+    margin-top: -50px;
+}
+.left-color{
+    position: absolute;
+    /*border: 1px solid red;*/
+    height: 51px;
+    margin-left: 1px;
+    width: 140px;
+    background-color: #30B0DD;
+    z-index: -1;
+}
+.mid-color{
+    position: absolute;
+    /*border: 1px solid red;*/
+    height: 51px;
+    margin-left: 140px;
+    width: 140px;
+    background-color: #92C14D;
+    z-index: -1;
+}
+.right-color{
+    position: absolute;
+    /*border: 1px solid red;*/
+    height: 51px;
+    margin-left: 280px;
+    width: 140px;
+    background-color: #F09442;
+    z-index: -1;
+}
+
+.two-images{
+    /*border: 1px solid red;*/
+    margin-top: -260px;
+    margin-left: 50px;
+    text-align: center;
+}
+.two-images img{
+    margin-right: 60px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+/*合同模板部分*/
+.contract-template {
+    height: 500px;
+    position: relative;
+    top: 400px;
+    /*border: 1px solid red;*/
+    display: block;
+}
+.contract-template img{
+    height: 120px;
+    margin-right: 130px;
+}
+.contract-top{
+    width: 1000px;
+    height: 200px;
+    margin-left: 350px;
+    /*border: 1px solid red;*/
+}
+.contract-btom{
+    width: 1100px;
+    height: 200px;
+    margin-left: 358px;
+    /*border: 1px solid red;*/
+}
+.contract-btom img{
+    margin-right: 140px;
+}
+
+/*审查案例部分*/
+.wrap-cases{
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    height: 600px;
+    width: 1530px;
+    margin-top: 400px;
+    background: url("../images/main_page/cases-list-back1.jpg") no-repeat;
+}
+
+.cases-left{
+    /*border: 1px solid red;*/
+    position: absolute;
+    height: 350px;
+    width: 440px;
+    margin-left: 260px;
+    margin-top: 160px;
+}
+
+.more-cases{
+    position: absolute;
+    /*border: 1px solid red;*/
+    height: 40px;
+    width: 160px;
+    margin-top: 530px;
+    margin-left: 700px;
+    background-color: white;
+}
+
+.cases-btm-back{
+
+    text-align: center;
+    margin-top: 9px;
+    /*background-color: white;*/
+}
+.cases-btm-back a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #B6B6B6;
+}
+
+.cases-left-back{
+    position: relative;
+    height: 300px;
+    width: 160px;
+    margin-left: 20px;
+    /*border: 1px solid red;*/
+    margin-top: 30px;
+}
+.back-1{
+    /*border: 1px solid red;*/
+    height: 50px;
+    background-color: white;
+}
+.back-2{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 40px;
+    background-color: white;
+}
+.back-3{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    background-color: white;
+}
+.back-4{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    background-color: white;
+}
+.back-5{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    background-color: white;
+}
+.cases-info{
+    position: absolute;
+    height: 300px;
+    width: 360px;
+    margin-left: 20px;
+    /*border: 1px solid red;*/
+    margin-top: -300px;
+}
+.info-left{
+    position: relative;
+    /*border: 1px solid red;*/
+    height: 280px;
+    width: 160px;
+    text-align: center;
+    margin-top: -20px;
+}
+.info-left p{
+    color: #088AF7;
+    margin-top: 36px;
+}
+
+.info-right-back{
+    position: absolute;
+    /*border: 1px solid red;*/
+    height: 270px;
+    width: 200px;
+    /*z-index: 1;*/
+    margin-top: -300px;
+    margin-left: 160px;
+}
+
+.filter{
+    filter: blur(0);
+    background-color: hsla(0,0%,100%,.4);
+}
+
+.text-1{
+    /*border: 1px solid red;*/
+
+    height: 50px;
+    margin-top: 3px;
+
+    /*background-color: white;*/
+}
+
+.text-2{
+    /*border: 1px solid red;*/
+    margin-top: 11px;
+    height: 40px;
+    /*background-color: white;*/
+}
+.text-3{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    /*background-color: white;*/
+}
+.text-4{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    /*background-color: white;*/
+}
+.text-5{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    height: 50px;
+    /*background-color: white;*/
+}
+.info-right{
+    /*border: 1px solid red;*/
+    position: absolute;
+    height: 280px;
+    width: 200px;
+    z-index: 1;
+    margin-top: -320px;
+    margin-left: 170px;
+    text-align: left;
+}
+.info-right p{
+    margin-top: 37px;
+
+}
+.info-right a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: black;
+}
+.info-right a:hover{
+    color: #009fff;
+}
+/*.blue-color{*/
+/*    color: #009fff;*/
+/*}*/
+
+
+/*最后一部分*/
+.wrap-btm{
+    /*border: 1px solid red;*/
+    position: relative;
+    height: 310px;
+    width: 1533px;
+    margin: 0 auto;
+    background-color: #363636;
+}
+.crop-info{
+    position: absolute;
+    height: 170px;
+    /*border: 1px solid white;*/
+    margin-top: 100px;
+    margin-left: 170px;
+    width: 380px;
+    text-align: left;
+}
+.crop-info p{
+    margin-top: 30px;
+    color: #B0B0B0;
+}
+.other-media{
+    position: absolute;
+    /*border: 1px solid white;*/
+    margin-left: 1102px;
+    margin-top: 120px;
+    width: 250px;
+    height: 150px;
+}
+.wechat-account{
+    position: relative;
+    /*border: 1px solid white;*/
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: white;/*微信公众号的二维码在这更改*/
+}
+.app-download{
+    position: relative;
+    /*border: 1px solid white;*/
+    height: 100px;
+    width: 100px;
+    margin-left: 140px;
+    margin-top: -102px;
+    background-color: white;/*扫描下载的二维码在这更改*/
+}
+.media-name{
+    position:absolute;
+    /*border: 1px solid white;*/
+    height: 20px;
+    width: 270px;
+    margin-top: -2px;
+    margin-left: 30px;
+    float: left;
+    text-align: center;
+}
+.media-name span{
+    color: #BBBBBB;
+    font-size: 10px;
+    margin-right: 90px;
+}
