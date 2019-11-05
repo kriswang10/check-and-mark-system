@@ -223,6 +223,9 @@ body{
     margin-top: 5px;
     color: #669CFD;
 }
+.menu-name a{
+    text-decoration: none;
+}
 .active-font{
     color: white;
 }
